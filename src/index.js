@@ -1,7 +1,8 @@
 const http = require("http")
 const express = require("express")
 const { expressMiddleware } = require("@apollo/server/express4")
-// export buildGraphqlServer
+const buildGraphqlServer = require('./graphql/index.js')
+
 const app = express();
 const httpServer = http.createServer(app);
 

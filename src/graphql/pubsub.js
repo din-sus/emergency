@@ -1,5 +1,5 @@
 // pubsub has to be installed
 
-const {PubSub} = require('pubsub')
+const {PubSub} = require('graphql-subscriptions')
 
-// module.exports = new PubSub() -> has to be written
+module.exports = new PubSub()

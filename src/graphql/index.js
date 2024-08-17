@@ -32,5 +32,4 @@ const buildGraphqlServer = (httpServer) => {
 
 
 
-
-// module.exports = buildGraphqlServer -> has to be exported to index.js which is located in graphql file
+module.exports = buildGraphqlServer 

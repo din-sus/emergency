@@ -1,0 +1,17 @@
+type Query {
+    categories: [Category]
+}
+
+type Category {
+    name: String
+}
+
+type Mutation {
+    createCategory(name: String): [Category],
+    updateCategory(id: Int, name: String): [Category],
+    deleteCategory(id: Int): [Category]
+}
+
+type Subscription {
+    categories: [Category]
+}

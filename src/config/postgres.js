@@ -12,7 +12,7 @@ const pool = new Pool({
 	user: process.env.DB_USER,
 });
 
-export const fetchData = async (query, ...params) => {
+const fetchData = async (query, ...params) => {
 	let client = await pool.connect();
 	try {
 		let { rows } = await client.query(query, params.length ? params : null);
@@ -25,4 +25,4 @@ export const fetchData = async (query, ...params) => {
 	}
 };
 
-module.exports = fetchData;
+module.exports = {fetchData}
