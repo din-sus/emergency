@@ -1,0 +1,18 @@
+type Query {
+    situations: [Situation]
+}
+
+type Situation {
+    id: Int
+    state: String
+    category: [Category]
+    user: [User]
+}
+
+type Mutation {
+    updateSituation(id: Int, state: String): [Situation]
+}
+
+type Subscription {
+    situations: [Situation]
+}
