@@ -1,0 +1,22 @@
+type Query {
+    subcategories: [Subcategory]
+}
+
+type Subcategory {
+    id: Int
+    name: String
+    total_req: Int
+    location: String
+    categories: [Category]
+    users: [User]
+}
+
+type Mutation {
+    createSubcategory(name: String, location: String, category_id: Int, user_id: Int): [Subcategory],
+    deleteSubcategory(id: Int): [Subcategory]
+}
+
+type Subscription {
+    subcategories: [Subcategory]
+}
+

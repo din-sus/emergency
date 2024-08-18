@@ -3,6 +3,7 @@ type Query {
 }
 
 type Category {
+    id: Int
     name: String
 }
 
