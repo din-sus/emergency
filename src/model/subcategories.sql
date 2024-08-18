@@ -3,7 +3,8 @@ CREATE TABLE fire (
     name VARCHAR(200),
     total_req INT,
     location VARCHAR(200),
-    category_id INT
+    category_id INT,
+    user_id INT
 );
 
 CREATE TABLE police (
@@ -11,7 +12,8 @@ CREATE TABLE police (
     name VARCHAR(200),
     total_req INT,
     location VARCHAR(200),
-    category_id INT
+    category_id INT,
+    user_id INT
 );
 
 CREATE TABLE ambulance (
@@ -19,5 +21,6 @@ CREATE TABLE ambulance (
     name VARCHAR(200),
     total_req INT,
     location VARCHAR(200),
-    category_id INT
+    category_id INT,
+    user_id INT
 );
